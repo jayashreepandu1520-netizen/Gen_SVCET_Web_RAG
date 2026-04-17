@@ -23,7 +23,7 @@ load_dotenv()
 # For local development, these will be read from .streamlit/secrets.toml
 # On Streamlit Cloud, they will be read from the repository's secrets
 groq_api_key = st.secrets.get("GROQ_API_KEY")
-os.environ["GROQ_API_KEY"] = st.secrets.get("GROQ_API_KEY")
+os.environ["SERPAPI_API_KEY"] = st.secrets.get("SERPAPI_API_KEY")
 os.environ["HE_TOKEN"] = st.secrets.get("HE_TOKEN")
 st.set_page_config(page_title="Web RAG with Groq & SerpApi", layout="wide")
 st.image("PragyanAI_Transperent_github.png")
